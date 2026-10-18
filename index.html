@@ -7,15 +7,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>      
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>      
 <link rel="stylesheet" href="style.css" />
 
 <script src="script.js" defer></script>
 
-    <title>project meetup</title>
+    <title>Project Meetup</title>
   </head>
+
   <body>
-   
+    <header class="navbar">
+     <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Meetup" />
+     </a>
+
+    <form class="search" action="events.html">
+      <label class="search__field">
+        <span class="material-symbols-rounded">search</span>
+          <input type="text" name="q" placeholder="Search events" />
+      </label>
+    
+    <input class="search__location" type="text" name="location" value="Mountain View, CA" aria-label="Location" />
+      <button class="search__btn" type="submit" aria-label="Search">
+        <span class="material-symbols-rounded">search</span>
+     </button>
+  </form>
+
+  <nav class="navbar__links">
+    <a href="#"><span class="material-symbols-rounded">language</span>English</a>
+    <a href="#">Log in</a>
+    <a href="#" class="btn btn--primary">Sign up</a>
+  </nav>
+</header>
+
   </body>
 </html>
